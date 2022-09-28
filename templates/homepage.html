@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Amari's Birthday RSVP{% endblock %}
+
+{% block body %}
+<h1>Amari is turning 1!</h1>
+
+<h2>Please RSVP</h2>
+
+<form method="POST" action="/rsvp">
+  <div class="rsvp">
+    <label for="fname">First</label>
+    <input id="fname" type="text" name="fname">
+  </div>
+  <div class="rsvp">
+    <label for="lname">Last</label>
+    <input id="lname" type="text" name="lname">
+  </div>
+  <div class="rsvp">
+    <label for="num-guests">Group Size</label>
+    <input id="num-guests" type="text" name="num-guests">
+  </div>
+  <div class="rsvp">
+    <input type="submit" value="I'll be there!" >
+  </div>
+</form>
+
+
+
+{% endblock %}
